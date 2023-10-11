@@ -136,11 +136,16 @@ nav{
 }
 
 .specialRecipeContainer{
-    height: 400px;
+    display: flex;
     width: 100%;
-    border: 1px dashed red;
+    justify-content: space-between;
 }
-
+.specialRecipeCard{
+    height: 500px;
+    width: 23%;
+    background: #d4c2fc;
+    border-radius: 40px;
+}
 @font-face {
     font-family: "Norse";
     src: url(resources/Norse.otf);
