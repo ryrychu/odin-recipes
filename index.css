@@ -1,0 +1,147 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+
+    margin: 0;
+}
+html{
+    min-height: 100vh;
+    background: #F9F5FF;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;    
+    padding: 50px 112px 20px;
+}
+
+/* Logo container styles */
+.odin_logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28262c;
+}
+
+/* Logo text styles */
+.odin_logo h4{
+    font: bold 20px "Norse";
+    margin-left: 5px;
+}
+
+/* Logo image styles */
+.odin_logo img{
+    width: 48px;
+    height: 48px;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 112px;
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+}
+
+.heroText h5{
+    color: #4E4675;
+    line-height: 24px;
+    margin: 10px 0;
+    padding: 4px;
+}
+.heroText h1{
+    color: #28262c;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    padding: 0;
+
+}
+.heroText p, .textWrapper p{
+    color: #646367;
+    font-size: 16 px;
+    margin: 5px 0;
+    padding: 4px;
+}
+
+.heroText button{
+    padding: 10px 25px;
+    width: fit-content;
+    background: #d4c2fc;
+    font-size: 16px;
+    font-style: semi-bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px #28262c;
+}
+.heroImages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    width: 700px;
+    overflow: hidden;
+}
+.hero_img{
+    z-index: 1;
+    width: 700px;
+    height: 700px;
+}
+.blob{
+    height: 1000px;
+    width: 900px;
+    position: absolute; 
+    top: 45%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+}
+
+#specialRecipes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 112px;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    margin-bottom: 100px;
+}
+.textWrapper h3{
+    color: #4E4675;
+    line-height: 24px;
+    padding: 4px;
+}
+
+.textWrapper h2{
+    color: #28262c;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 0;
+
+}
+
+.specialRecipeContainer{
+    height: 400px;
+    width: 100%;
+    border: 1px dashed red;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url(resources/Norse.otf);
+}
