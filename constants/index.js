@@ -6,42 +6,43 @@ const specialRecipes = [
         duration: "50 minutes",
         origin: "Philippines",
         foodDesc: "Beef Mechado is a delicious tomato-based stew that pairs perfectly with a warm cup of rice",
-        link: "youtube.com",
+        link: "recipes/mechado.html",
         durationLogo: "resources/timer.svg",
         originLogo: "resources/phflag.svg",
     },
     {
-        imageSrc: "resources/BeefMechado.webp",
+        imageSrc: "resources/Adobo.jpg",
         id: "Adobo",
-        duration: "50 minutes",
+        duration: "45 minutes",
         origin: "Philippines",
-        foodDesc: "Beef Mechado is a delicious tomato-based stew that pairs perfectly with a warm cup of rice",
-        link: "youtube.com",
+        foodDesc: "The savory, umami combination of soy sauce, vinegar, and garlic breathes life into the classic dish we know as adobo",
+        link: "recipes/adobo.html",
         durationLogo: "resources/timer.svg",
         originLogo: "resources/phflag.svg",
     },
     {
-        imageSrc: "resources/BeefMechado.webp",
-        id: "Adobo",
-        duration: "50 minutes",
+        imageSrc: "resources/Bibingka.jpg",
+        id: "Bibingka",
+        duration: "45 minutes",
         origin: "Philippines",
-        foodDesc: "Beef Mechado is a delicious tomato-based stew that pairs perfectly with a warm cup of rice",
-        link: "youtube.com",
+        foodDesc: "Bibingka is a type of rice cake native to the Philippines.",
+        link: "recipes/Bibingka.html",
         durationLogo: "resources/timer.svg",
         originLogo: "resources/phflag.svg",
     },
     {
-        imageSrc: "resources/BeefMechado.webp",
-        id: "Adobo",
-        duration: "50 minutes",
+        imageSrc: "resources/Lumpia.jpg",
+        id: "Lumpia",
+        duration: "25 minutes",
         origin: "Philippines",
-        foodDesc: "Beef Mechado is a delicious tomato-based stew that pairs perfectly with a warm cup of rice",
-        link: "youtube.com",
+        foodDesc: "Lumpia or Lumpiang Shanghai is a type of Filipino egg roll.",
+        link: "recipes/lumpia.html",
         durationLogo: "resources/timer.svg",
         originLogo: "resources/phflag.svg",
     }
 
 ];
+
 
 
 const recipeContainer = document.getElementById("recipeContainer");
@@ -121,45 +122,5 @@ function createRecipeDesc (recipe){
     return recipeDesc;
 }
 
-/*specialRecipes.forEach(recipe => {
-    const recipeCard = document.createElement("div");
-    recipeCard.classList.add("specialRecipeCard");
-
-    const recipeImageContainer = document.createElement("div");
-    recipeImageContainer.classList.add("imageRecipe");
-
-    const recipeImage = document.createElement("img");
-    recipeImage.setAttribute("src", recipe.imageSrc);
-
-    const recipeButton = document.createElement("a");
-    recipeButton.textContent = recipe.id;
-    recipeButton.setAttribute("href", recipe.link);
-
-    const recipeDetail = document.createElement("div");
-    recipeDetail.classList.add("specialRecipeText");
-
-    const durationContainer = document.createElement("div");
-    durationContainer.classList.add("durationContainer");
-
-    const recipeDuration = document.createElement("p");
-    recipeDuration.textContent = recipe.duration;
-
-    const durationLogo = document.createElement("img");
-    durationLogo.setAttribute("href", recipe.durationLogo);
-    
-    const originContainer = document.createElement("div");
-    durationContainer.classList.add("originContainer");
-
-    const originLogo = document.createElement("img");
-    durationLogo.setAttribute("href", recipe.originLogo);
-
-    const recipeOrigin = document.createElement("p");
-    recipeOrigin.textContent = recipe.origin;
-
-    const recipeDesc = document.createElement("h4");
-    recipeDesc.textContent = recipe.foodDesc;
-
-
-});*/
 
 

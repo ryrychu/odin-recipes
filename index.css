@@ -36,11 +36,13 @@ nav{
     height: 48px;
 }
 
-#hero{
+#hero, #recipeSection{
     display: flex;
     justify-content: space-between;
     padding: 10px 112px;
 }
+
+
 
 .heroText{
     display: flex;
@@ -49,6 +51,26 @@ nav{
     width: 800px;
 }
 
+.foodHeroText{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px 10px;
+    height: fit-content;
+    gap: 14px;
+}
+
+.foodHeroText h2{
+    color: #14248a;
+}
+
+.foodHeroText > p{
+    color: #646367;
+    font-size: 16 px;
+    margin: 5px 0;
+   
+} 
 .heroText h5{
     color: #14248a;
     line-height: 24px;
@@ -90,19 +112,38 @@ nav{
     width: 700px;
     overflow: hidden;
 }
+.foodImages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 700px;
+
+}
 .hero_img{
     z-index: 1;
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
+}
+
+.foodHero{
+    z-index: 1;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border: 5px solid #28262c;
+    object-fit: cover;
 }
 .blob{
-    height: 1000px;
-    width: 900px;
+    height: 50rem;
+    width: 50rem;
     position: absolute; 
-    top: 45%;
-    left: 44%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 #specialRecipes{
     margin-top: 50px;
@@ -217,4 +258,65 @@ nav{
 @font-face {
     font-family: "Norse";
     src: url(resources/Norse.otf);
+}
+
+.foodHeroContainer{
+    display: flex;
+    flex-direction: column;
+}
+.cookDuration{
+    display: flex;
+    gap: 10px;
+}
+
+.cookDuration span{
+    font-weight: bold;
+}
+
+.cookDuration p{    
+    color: #28262c
+}
+
+
+.foodRequirements{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foodRequirements li{
+    font-size: 16px;
+}
+
+.foodRequirements h2{
+    color:  #28262c;
+}
+#unordered-list{
+    list-style-type: none;
+    color: #28262c;
+    font-size: 20px;
+    padding: 0;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 10px; 
+    font-size: 20px;
+}
+
+.numberButton{
+    border: 2px solid #998fc7;
+    background: #d4c2fc;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.numOfPeople{
+    color:  #28262c;
+}
+
+.numOfPeople span{
+    color: #14248a;
+    font-weight: bold;
 }
